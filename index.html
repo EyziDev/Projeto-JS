@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Code House</title>
+</head>
+<body>
+    <div class="menu" id="menu">
+        <button class="menu-item" aria-label="Usuário">
+            <img src="img/usuario.png" alt="Usuário" class="menu-icon">
+        </button>
+        <button class="menu-item" aria-label="Home">
+            <img src="img/home.png" alt="Home" class="menu-icon">
+        </button>
+        <button class="menu-item" aria-label="Projetos">
+            <img src="img/proj.png" alt="Projetos" class="menu-icon">
+        </button>
+        <button class="menu-item" aria-label="Projetos Compartilhados">
+            <img src="img/projComp.png" alt="Projetos Compartilhados" class="menu-icon">
+        </button>
+        <!-- Botão de seta no final da barra -->
+        <div class="menu-toggle-button" id="toggle-button" onclick="toggleMenu()">
+            <img src="img/seta.png" alt="toggle" class="toggle-icon" />
+        </div>
+    </div>
+    <div class="content">
+        <input type="text" placeholder="Buscar..." class="search">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="main-content">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
